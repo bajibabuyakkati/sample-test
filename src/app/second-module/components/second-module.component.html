@@ -1,0 +1,13 @@
+<div>Second Module works!!</div>
+<img style="width:400px; height:400px; "src="https://simply-communicate.com/wp-content/uploads/2013/11/featured.png">
+
+
+<div class="movie-list" id="movie">
+  <ul>
+    <li *ngFor ="let movieName of movieList, let i = index" [id]="i">{{i}}=={{ movieName }}</li>
+  </ul>
+
+  <button (click)="onStart()">Start</button>
+  <button (click)="onStop()">Stop</button>
+
+</div>
